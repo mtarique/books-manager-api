@@ -6,8 +6,8 @@ This API allows you to manage a collection of books. You can perform various ope
 
 # Local setup and running instructions
 ## Prerequisites
-1. NodeJS
-2. MongoDB
+1. NodeJS Version 20
+2. MongoDB Version 7.0
 3. Git
 4. Code Editor
 ## Setup the project locally
