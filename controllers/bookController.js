@@ -90,7 +90,7 @@ exports.deleteBook = async (req, res) => {
         }
         
         await Book.findByIdAndDelete(bookId)
-        res.status(204).json({ message: 'Successfully deleted' });
+        res.status(200).json({ message: 'Successfully deleted' });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
