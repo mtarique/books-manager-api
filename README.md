@@ -4,6 +4,9 @@
 
 This API allows you to manage a collection of books. You can perform various operations like adding a book, retrieving a list of books, getting book details, updating a book, and deleting a book.
 
+## YouTube Video Link
+https://youtu.be/21unOF6koo4
+
 # Local setup and running instructions
 ## Prerequisites
 1. NodeJS Version 16+
@@ -33,7 +36,7 @@ You can use tools like Postman or VS Code Thunder Client Extension to test the A
 # API Endpoints Documentation
 ## Base URL
 
-The base URL for all API endpoints is: `https://your-api-url.com/api`
+The base URL for all API endpoints is: `https://bookmanager-rrb8.onrender.com/api`
 
 ## Authentication
 
@@ -144,6 +147,24 @@ Delete a specific book by its ID.
 - 204 No Content: The book was successfully deleted.
 
 - 404 Not Found: If the book with the provided ID does not exist.
+
+## API Deployment
+I have deployed this API on Render.com which can be accessed at base api URL `https://bookmanager-rrb8.onrender.com/api`.
+1. Created a free account on https://render.com/
+2. Added a new web service by clicking on Add New + button there
+3. Then deployed directly from my GIT repository
+4. Run the following command in Render.com project setting wizard
+   `npm install`
+   `npm start`
+6. Updated the ENVIRONMENT VARIABLES
+   ```
+   PORT=3000
+   DB_HOST=My atlas mongodb connection string
+   NODE_VERSION=16.0.0
+   ```
+
+
+**Test:** Get list of books by hitting `https://bookmanager-rrb8.onrender.com/api/books` in your browsers address bar or use any tools like Postman or Thunder Client.
 
 ## Conclusion
 
